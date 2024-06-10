@@ -3,7 +3,7 @@
 # Responsivitet Bootcamp
 **En hög med övningar för att träna på responsivitet.**
 
-### Testa att använda både Flexbox, CSS grid och vanilla CSS på varje övning.
+### Testa att använda både Flexbox, CSS grid och vanilla CSS (inga bibliotek eller preprocessorer så som Bootstrap eller SASS etc) på varje övning.
 
 ## Övning 1
 ![image](respcamp1.jpg)
