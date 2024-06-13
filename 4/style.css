@@ -1,0 +1,121 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+
+    #circle {
+        background-color: rgb(77, 2, 92);
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+
+    }
+
+
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+    flex: 1;
+
+    section {
+
+        height: 40vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+
+        article {
+            background-color: pink;
+        }
+
+        > :nth-child(1) {
+            background-color: rgb(141, 6, 107);
+        }
+
+        > :nth-child(4) {
+            background-color: rgb(141, 6, 107);
+        }
+
+    }
+
+    button {
+        width: 30%;
+        margin: 0 auto;
+        gap: 1rem;
+        background-color: rgb(223, 15, 143);
+        border-radius: 1rem;
+        height: 4rem;
+        border-style: none;
+    }
+
+}
+
+footer {
+    background-color: beige;
+    height: 5rem;
+    position: fixed;
+    width: calc(100vw - 2rem);
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 0 auto;
+    }
+
+    main {
+        display: flexbox;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+
+        section {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 0.5rem;
+        }
+
+        button {
+
+            width: 100%;
+            /* height: 20vh; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 5rem;
+
+
+            /* height: 10vh; */
+
+
+        }
+
+
+
+    }
+
+}
